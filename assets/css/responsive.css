@@ -1,6 +1,3 @@
-@media screen and (max-width:1680px){
-
-}/*max-width:1680px*/
 @media screen and (max-width:1440px){
 	.single-about-img img {max-width:100%;}
 	.single-about-img:before,.about-list-icon{width: 100%;}
@@ -8,16 +5,10 @@
 
 @media screen and (max-width:1199px){
 	nav.navbar.bootsnav ul.nav > li > a { padding: 35px 8px;}
-	
 	.welcome-hero {height: 768px;}
-
 	.timeline-content span>i, .experience-time span>i {left: -15.5%;}
 }/*max-width:1199px*/
 
-@media screen and (max-width:1024px){
-
-
-}/*max-width:1024px*/
 
 @media screen and (max-width:1008px){
 	nav.navbar.bootsnav ul.nav > li.dropdown span.megamenu-title  {display:block;color: #43465d;font-size: 18px;}
@@ -27,7 +18,7 @@
 
 @media screen and (max-width:992px){
 	nav.navbar.bootsnav .navbar-collapse.collapse.in {padding-bottom: 30px;}
-	nav.navbar.bootsnav .navbar-toggle {display: inline-block; float: right;margin-right: 0;margin-top: 21px;}
+	nav.navbar.bootsnav .navbar-toggle {display: inline-block; float: right; margin-right: 0;margin-top: 21px;}
 	nav.navbar.bootsnav .navbar-brand {float: left!important;}
 	nav.navbar.bootsnav ul.nav > li > a {padding: 15px 0px;border: transparent;}
 }/*max-width:992px*/
@@ -43,9 +34,6 @@
 	.single-horizontal-timeline .experience-time,.single-horizontal-timeline .timeline-content {margin: 0;}
 }/*max-width:991px*/
 
-@media screen and (max-width:768px){
-    
-}/*max-width:768px*/
 
 @media screen and (max-width:767px){
 	.single-about-img {max-width: 450px;}
@@ -61,36 +49,7 @@
 
 }/*max-width:767px*/
 
-@media screen and (max-width: 660px){
-
-}/*max-width:660px*/
-
-@media screen and (max-width: 640px){
-
-}/*max-width:640px*/
-
-@media screen and (max-width: 580px){
-
-}/*max-width:580px*/
-
 @media screen and (max-width: 540px){
 	.subscribe-title h2 {font-size: 24px;}
 
 }/*max-width:540px*/
-
-@media screen and (max-width: 480px){
-	
-}/*max-width:480px*/
-
-@media screen and (max-width: 440px){
-	
-}/*max-width:400px*/
-
-@media screen and (max-width:350px){
-
-}/*max-width:350px*/
-
-@media screen and  (max-width: 320px){
-	
-}/*max-width:320px*/
-
