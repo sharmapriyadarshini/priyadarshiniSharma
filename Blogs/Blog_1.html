@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Life: What is Life?</title>
+
+    <!-- Link to CSS files -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <style>
+        /* === Apple-Like Minimalism with Interactivity === */
+        body {
+            background: rgb(0, 0, 0);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+            transition: background 0.5s ease;
+        }
+
+        /* Fullscreen Hero */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            background: radial-gradient(circle, rgba(255,255,255,0.05) 20%, rgba(0,0,0,1) 100%);
+            overflow: hidden;
+            transition: background 0.5s ease-in-out;
+        }
+
+        /* Floating Blurry Orbs */
+        .orb {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%);
+            filter: blur(80px);
+            border-radius: 50%;
+            animation: float 10s infinite alternate ease-in-out;
+        }
+
+        .orb.one { top: 10%; left: 10%; animation-delay: 1s; }
+        .orb.two { bottom: 10%; right: 10%; animation-delay: 3s; }
+
+        @keyframes float {
+            0% { transform: translateY(-30px) translateX(30px); }
+            100% { transform: translateY(30px) translateX(-30px); }
+        }
+
+        /* Hero Title with Dynamic Parallax Effect */
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            z-index: 10;
+            position: relative;
+            background: linear-gradient(to right, #ffffff, #cccccc);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: transform 0.2s ease-out;
+        }
+
+        /* Smooth Scroll Sections */
+        .scroll-container {
+            text-align: center;
+            margin: 60px auto;
+            max-width: 800px;
+            font-size: 1.5rem;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Blog Content Box with Light Hover Effect */
+        .content-box {
+            max-width: 900px;
+            margin: 80px auto;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            transition: all 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .content-box:hover {
+            box-shadow: 0 15px 40px rgba(255, 255, 255, 0.2);
+            transform: scale(1.02);
+        }
+
+        .content-box h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #ffffff, #aaaaaa);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Glowing Effect for h2 */
+        .content-box h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #ffffff, #aaaaaa);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            animation: glow 2.5s infinite alternate ease-in-out;
+            transition: text-shadow 0.3s ease-in-out;
+        }
+
+        .content-box p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #cccccc;
+        }
+
+        /* Call to Action Button with Glow Effect */
+        .cta {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .cta a {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: black;
+            background: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease-in-out, background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .cta a:hover {
+            background: grey;
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .content-box {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <div class="orb one"></div>
+        <div class="orb two"></div>
+        <h1 id="parallax-title">Life: What is Life?</h1>
+    </div>
+
+    <!-- INTRO TEXT WITH FADE-IN EFFECT -->
+    <div class="scroll-container fade-in">
+        <p>Is life simply a biological process, or is it something deeper? Is it energy, a mathematical code, or something beyond comprehension?</p>
+    </div>
+
+    <!-- BLOG CONTENT -->
+    <div class="content-box fade-in">
+        <h2>Defining Life: Beyond Biology</h2>
+        <p>Scientists define life as self-sustaining biochemical reactions. But is that all? The human mind seeks meaning beyond mere survival.</p>
+    </div>
+
+    <div class="content-box fade-in">
+        <h2>Are We Alone?</h2>
+        <p>If life is so rare, why are we here? Could it be that life is the universe understanding itself?</p>
+    </div>
+
+    <!-- CALL TO ACTION -->
+    <div class="cta fade-in">
+        <a href="blogs.html">Back to Blogs</a>
+    </div>
+
+    <!-- INTERACTIVITY SCRIPT -->
+    <script>
+        // Continuous Scroll Animation
+        document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll(".fade-in, .scroll-container");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show");
+                    } else {
+                        entry.target.classList.remove("show");
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            elements.forEach(element => observer.observe(element));
+        });
+
+        // Parallax Effect on Hero Title
+        document.addEventListener("mousemove", (e) => {
+            const title = document.getElementById("parallax-title");
+            const x = (window.innerWidth / 2 - e.clientX) / 30;
+            const y = (window.innerHeight / 2 - e.clientY) / 30;
+            title.style.transform = `translate(${x}px, ${y}px)`;
+        });
+
+    </script>
+
+</body>
+</html>
