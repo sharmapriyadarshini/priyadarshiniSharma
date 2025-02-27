@@ -1,6 +1,6 @@
 /*==================================
 * Author        : "Priyadarshini Sharma"
-* Version       : 1.0
+* Version       : 3.2
 ==================================== */
 
 /*==================================
@@ -89,6 +89,17 @@ html,body{
   -o-transition: opacity 0.3s 0.3s ease; 
   transition: opacity 0.3s 0.3s ease; 
   opacity: 0;
+}
+
+.hero-text, .blog-card {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.hero-text.animate, .blog-card.animate {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .fix{position: relative;clear: both;}
@@ -203,7 +214,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     background:url(../images/about/IMG_6910.jpg);
     background-size:cover;
     background-position: center;
-    height: 1000px;
+    height: 700px;
 }
 
 .welcome-hero:before{
@@ -848,6 +859,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     padding: 38px 0;
 }
 .hm-footer-copyright p a {color: #888ea5;}
+
 /*===============================
     Scroll Top
 ===============================*/
@@ -897,8 +909,9 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     100%  {bottom:7px;}
 }
 
-/*========================Thank you=================*/
-
+/*===============================
+    Effects
+===============================*/
 
 /* Text Gradient Effect */
 #about h2 {
@@ -971,7 +984,9 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     }
 }
 
-
+/*===============================
+    Section Styling
+===============================*/
 /* Experience Section Styling */
 #experience h1 {
     font-size: 2.5rem;
@@ -1041,3 +1056,26 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     background-size: 300% 300%;
     animation: textGradient 5s ease infinite;
 }
+
+.blogs-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 22px;
+    color: #430e85cc;
+    border: 2px solid #a75effcc;
+    background: #d2adffcc;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.blogs-btn:hover {
+    padding: 13px 31px;
+    font-size: 24px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+/*========================Thank you=================*/
