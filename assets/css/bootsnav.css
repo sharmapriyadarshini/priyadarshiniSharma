@@ -1,12 +1,5 @@
 /* ==============================================================
 
-Template name : Bootsnav - Multi Purpose Header
-Categorie : Bootstrap Menu in CSS
-Author : adamnurdin01
-Version : v.1.2
-Created : 2016-06-02
-Last update : 2016-10-19
-
 ============================================================== */
 
 /* MEGAMENU STYLE
@@ -209,7 +202,6 @@ li.close-full-menu{
 /* Atribute Navigation
 =================================*/
 .attr-nav{
-    float: right;
     display: inline-block;
     margin-left: 13px;
     margin-right: -15px;
@@ -1007,7 +999,6 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     
     nav.navbar.bootsnav .navbar-toggle {
         display: inline-block;
-        float: left;
         margin-right: -200px;
         margin-top: 10px;
     }
@@ -1260,7 +1251,6 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     
     nav.bootsnav.navbar-full .navbar-toggle {
         display: inline-block;
-        float: right;
         margin-right: 0;
         margin-top: 10px;
     }
@@ -1280,7 +1270,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     /* Tabs
     =================================*/ 
     nav.navbar.bootsnav .megamenu-content.tabbed{
-        padding-left: 0 !mportant;
+        padding-left: 0 !important;
     }
     
     nav.navbar.bootsnav .tabbed > li{
@@ -1471,4 +1461,3 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
         padding-bottom: 30px;
     }
 }
-
